@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gravity : MonoBehaviour
+public class rotationlock : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,7 @@ public class Gravity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.rotation = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
+
     }
 }
